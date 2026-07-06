@@ -46,13 +46,13 @@ Run tests after setup:
 Windows:
 
 ```powershell
-.\.venv\Scripts\python.exe -m prompthelper.app
+.\.venv\Scripts\python.exe -m Prompter.app
 ```
 
 macOS:
 
 ```bash
-.venv/bin/python -m prompthelper.app
+.venv/bin/python -m Prompter.app
 ```
 
 ## Build
@@ -66,7 +66,7 @@ powershell -ExecutionPolicy Bypass -File packaging\build_windows.ps1
 Output:
 
 ```text
-dist\PromptHelper\PromptHelper.exe
+dist\Prompter\Prompter.exe
 ```
 
 macOS:
@@ -78,7 +78,7 @@ bash packaging/build_macos.sh
 Output:
 
 ```text
-dist/PromptHelper.app
+dist/Prompter.app
 ```
 
 ## Suggested AGENT files

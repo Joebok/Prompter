@@ -1,4 +1,4 @@
-# PromptHelper Implementation Plan
+# Prompter Implementation Plan
 
 ## Goal
 Create a standalone desktop app for quickly generating structured LLM prompts using the four-part contract:
@@ -53,7 +53,7 @@ Avoid tab-heavy or wizard-style UI for the first version.
 Recommended layout:
 
 ```text
-PromptHelper
+Prompter
 
 Target: [ Codex ▼ ]       [x] Run Tests       [ Copy Prompt ]
 
@@ -234,7 +234,7 @@ The generated prompt should discourage full-suite runs by default.
 Implement prompt generation in a non-UI module:
 
 ```text
-prompthelper/prompt_engine.py
+Prompter/prompt_engine.py
 ```
 
 Suggested API:
@@ -277,11 +277,11 @@ Rules:
 Recommended project layout:
 
 ```text
-PromptHelper/
+Prompter/
     pyproject.toml
     README.md
     AGENTS.md
-    prompthelper/
+    Prompter/
         __init__.py
         app.py
         main_window.py
@@ -455,7 +455,7 @@ Use this prompt to start implementation:
 
 ```text
 Goal:
-Create a new Python 3 + PySide6 desktop app named PromptHelper. It should generate structured LLM prompts using four multiline fields: Goal, Context, Constraints, and Success. Primary target is Windows 11, but source code must remain portable to macOS.
+Create a new Python 3 + PySide6 desktop app named Prompter. It should generate structured LLM prompts using four multiline fields: Goal, Context, Constraints, and Success. Primary target is Windows 11, but source code must remain portable to macOS.
 
 Context:
 This is a new standalone project, not part of Zet. Follow the local AGENTS.md. The main workflow is pasting prompts into Codex. The app should also support Ollama and VS Code / Claude presets. The app should package with PyInstaller on Windows and macOS, built separately on each OS.

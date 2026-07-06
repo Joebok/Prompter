@@ -3,7 +3,7 @@ requires = ["setuptools>=69"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "prompthelper"
+name = "Prompter"
 version = "0.1.0"
 description = "Desktop helper for generating structured LLM prompts."
 readme = "README.md"
@@ -19,7 +19,7 @@ dev = [
 ]
 
 [project.scripts]
-prompthelper = "prompthelper.app:main"
+Prompter = "Prompter.app:main"
 
 [tool.setuptools.packages.find]
-include = ["prompthelper*"]
+include = ["Prompter*"]

@@ -1,7 +1,7 @@
 from PySide6.QtCore import QSize
 from PySide6.QtCore import QSettings
 
-from prompthelper.prompt_engine import TargetPreset
+from Prompter.prompt_engine import TargetPreset
 
 
 class AppSettings:

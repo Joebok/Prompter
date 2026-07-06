@@ -5,7 +5,7 @@
 - Do not assume system `python` points to a modern release.
 
 ### Project Scope
-- This repository contains PromptHelper, a standalone desktop prompt-building app.
+- This repository contains Prompter, a standalone desktop prompt-building app.
 - Primary target is Windows 11.
 - Secondary target is macOS from the same source code.
 - Keep the app local-first and clipboard-focused.
@@ -91,9 +91,9 @@ Success:
 
 Anything outside this contract is out of scope.
 
-### PromptHelper Defaults
+### Prompter Defaults
 
-When implementing PromptHelper features:
+When implementing Prompter features:
 
 - Optimize for fast manual prompt creation.
 - Keep the main window usable without opening secondary dialogs.
