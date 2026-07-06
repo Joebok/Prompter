@@ -1,12 +1,12 @@
 from PySide6.QtWidgets import QApplication
 
-from Prompter.main_window import MainWindow
+from prompter.main_window import MainWindow
 
 
 def main() -> int:
     app = QApplication([])
-    app.setApplicationName("Prompter")
-    app.setOrganizationName("Prompter")
+    app.setApplicationName("prompter")
+    app.setOrganizationName("prompter")
     window = MainWindow()
     window.show()
     return app.exec()
