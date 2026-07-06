@@ -1,8 +1,8 @@
 # -*- mode: python ; coding: utf-8 -*-
 
 a = Analysis(
-    ["prompthelper/app.py"],
-    pathex=[],
+    ["../prompthelper/app.py"],
+    pathex=[".."],
     binaries=[],
     datas=[],
     hiddenimports=[],
