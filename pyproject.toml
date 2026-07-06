@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prompthelper"
+version = "0.1.0"
+description = "Desktop helper for generating structured LLM prompts."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "PySide6",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pyinstaller",
+    "pytest",
+]
+
+[project.scripts]
+prompthelper = "prompthelper.app:main"
+
+[tool.setuptools.packages.find]
+include = ["prompthelper*"]

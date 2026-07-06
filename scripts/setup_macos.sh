@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+python3 -m venv .venv
+.venv/bin/python -m pip install -U pip
+.venv/bin/python -m pip install -e '.[dev]'
+.venv/bin/python -m pytest
