@@ -4,7 +4,7 @@ a = Analysis(
     ["../prompter/app.py"],
     pathex=[".."],
     binaries=[],
-    datas=[],
+    datas=[("../img/PrompterLogo_256.ico", "img")],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -31,6 +31,7 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    icon="../img/PrompterLogo_256.ico",
 )
 coll = COLLECT(
     exe,

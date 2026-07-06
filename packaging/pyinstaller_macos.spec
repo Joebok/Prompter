@@ -1,10 +1,10 @@
 # -*- mode: python ; coding: utf-8 -*-
 
 a = Analysis(
-    ["Prompter/app.py"],
-    pathex=[],
+    ["../prompter/app.py"],
+    pathex=[".."],
     binaries=[],
-    datas=[],
+    datas=[("../img/PrompterLogo_1024.icns", "img")],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -35,6 +35,6 @@ exe = EXE(
 app = BUNDLE(
     exe,
     name="Prompter.app",
-    icon=None,
+    icon="../img/PrompterLogo_1024.icns",
     bundle_identifier="com.Prompter.app",
 )
