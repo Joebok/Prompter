@@ -15,20 +15,20 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-from Prompter.prompt_engine import (
+from prompter.prompt_engine import (
     DEFAULT_CODEX_CONSTRAINTS,
     PromptRequest,
     TargetPreset,
     build_prompt,
 )
-from Prompter.settings import AppSettings
+from prompter.settings import AppSettings
 
 
 class MainWindow(QMainWindow):
     def __init__(self) -> None:
         super().__init__()
         self.settings = AppSettings()
-        self.setWindowTitle("Prompter")
+        self.setWindowTitle("prompter")
 
         self.target_combo = QComboBox()
         self.target_combo.addItems([preset.value for preset in TargetPreset])
