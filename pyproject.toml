@@ -19,7 +19,7 @@ dev = [
 ]
 
 [project.scripts]
-Prompter = "Prompter.app:main"
+Prompter = "prompter.app:main"
 
 [tool.setuptools.packages.find]
-include = ["Prompter*"]
+include = ["prompter*"]

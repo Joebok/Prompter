@@ -32,8 +32,17 @@ exe = EXE(
     codesign_identity=None,
     entitlements_file=None,
 )
-app = BUNDLE(
+coll = COLLECT(
     exe,
+    a.binaries,
+    a.datas,
+    strip=False,
+    upx=True,
+    upx_exclude=[],
+    name="Prompter",
+)
+app = BUNDLE(
+    coll,
     name="Prompter.app",
     icon="../img/PrompterLogo_1024.icns",
     bundle_identifier="com.Prompter.app",

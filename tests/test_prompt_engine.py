@@ -1,4 +1,4 @@
-from Prompter.prompt_engine import PromptRequest, TargetPreset, build_prompt
+from prompter.prompt_engine import PromptRequest, TargetPreset, build_prompt
 
 
 def request(target=TargetPreset.CODEX, run_tests=True, **fields):
