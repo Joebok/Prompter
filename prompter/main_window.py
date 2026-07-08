@@ -80,7 +80,7 @@ class MainWindow(QMainWindow):
             result = QMessageBox.question(self, "Clear Fields", "Clear all prompt fields?")
             if result != QMessageBox.StandardButton.Yes:
                 return
-        for edit in (self.goal_edit, self.context_edit, self.constraints_edit, self.success_edit):
+        for edit in (self.goal_edit, self.context_edit, self.success_edit):
             edit.clear()
         self.update_preview()
 
