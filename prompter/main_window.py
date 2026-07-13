@@ -40,8 +40,11 @@ class MainWindow(QMainWindow):
         )
 
         self.copy_button = QPushButton("Copy Prompt")
+        self.copy_button.setStyleSheet("background-color: green; font-weight:bold; padding: 6px 20px 6px 20px;");
         self.copy_button.setDefault(True)
+
         self.clear_button = QPushButton("Clear")
+        self.clear_button.setStyleSheet("background-color: red; font-weight:bold");
 
         self.goal_edit = self._text_edit()
         self.context_edit = self._text_edit()
@@ -91,6 +94,7 @@ class MainWindow(QMainWindow):
         top_bar.addSpacing(12)
         top_bar.addWidget(self.run_tests_checkbox)
         top_bar.addStretch(1)
+        top_bar.addWidget(self.clear_button)
         top_bar.addWidget(self.copy_button)
 
         layout = QVBoxLayout()
@@ -100,7 +104,7 @@ class MainWindow(QMainWindow):
         self._add_labeled_edit(layout, "Constraints:", self.constraints_edit)
         self._add_labeled_edit(layout, "Success:", self.success_edit)
         self._add_labeled_edit(layout, "Generated Prompt:", self.preview_edit)
-        layout.addWidget(self.clear_button, alignment=Qt.AlignmentFlag.AlignRight)
+        # layout.addWidget(self.clear_button, alignment=Qt.AlignmentFlag.AlignRight)
 
         container = QWidget()
         container.setLayout(layout)
